@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * C Program that prints
- * 'Programming is like building a multilingual puzzle'
- * Author: Mugisa Phillip
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 
 int main(void)
