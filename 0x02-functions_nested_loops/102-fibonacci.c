@@ -12,19 +12,20 @@ int main(void)
     int next_term;
     int i;
 
-    printf("%d, %d, ", n1, n2);  // print the first two terms
+    printf("%d, %d, ", n1, n2);
 
-    for (i = 3; i <= 50; i++) {  // start the loop from 3rd term
-        next_term = n1 + n2;     // calculate the next term
-        printf("%d", next_term); // print the next term
-        if (i != 50) {           // add comma and space if it's not the last term
-            printf(", ");
+    for (i = 3; i <= 50; i++)
+    {
+        next_term = n1 + n2;
+        printf("%d", next_term);
+        if (i != 50)
+	{
+		printf(", ");
         }
-        n1 = n2;                 // update n1 and n2 for the next iteration
+        n1 = n2;
         n2 = next_term;
     }
 
-    printf("\n");               // print a new line
-
+    printf("\n");
     return 0;
 }
