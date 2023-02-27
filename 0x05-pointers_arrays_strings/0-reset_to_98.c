@@ -1,4 +1,4 @@
-#include "main.h";
+#include "main.h"
 
 /*
  * main - takes a pointer to an int as parameter 
