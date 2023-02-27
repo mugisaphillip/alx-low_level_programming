@@ -1,9 +1,8 @@
 #include "main.h"
-
-/*
- * main - takes a pointer to an int as parameter 
- * and updates the value it points to to 98.
- * return - 0
+/**
+ * reset_to_98 - updates value to 98
+ * @n: character pointer
+ * Returns: void
  */
 
 void reset_to_98(int *n)
