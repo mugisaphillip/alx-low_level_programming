@@ -1,11 +1,12 @@
 #ifdef DOG_H
 #define DOG_H
 
-/*
- * struct dog - struct for keeping dog dat
- * @name: Name of dog
- * @age: Age of dog
- * @owner: Owner of dog
+/**
+ * struct dog - information of the dog
+ * @name: member 1
+ * @age: member 2
+ * @owner: member 3
+ * Description: longer discription
  */
 
 struct dog
