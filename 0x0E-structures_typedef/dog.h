@@ -16,6 +16,6 @@ struct dog
 	char *owner;
 };
 
-int init_dog(struct * dog, char * name, int age, char * owner)
+int init_dog(struct * dog, char * name, int age, char * owner);
 
 #endif
