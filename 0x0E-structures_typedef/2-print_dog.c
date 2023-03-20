@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
+#include "dog.h"
 
-/*
- * print_dog - prints dog information
- * @d: a pointer to a dog struct
+/**
+ * print_dog - function that prints a struct dog
+ * @d: struct dog to print
  */
 
 void print_dog(struct dog *d)
@@ -14,9 +14,6 @@ void print_dog(struct dog *d)
 	if (d->name == NULL)
 		d->name = "(nil)";
 	if (d->owner == NULL)
-		d->owner == "(nil)";
-	if (d->age == NULL)
-		d->age = "(nil)";
-
+		d->owner = "(nil)";
 	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
