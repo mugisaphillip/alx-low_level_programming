@@ -1,4 +1,5 @@
-#inlude "lists.h"
+#include <stddef.h>
+#include "lists.h"
 
 /**
  * listint_len - Returns number of elements in a linked list
@@ -12,7 +13,7 @@ size_t listint_len(const listint_t *h)
 	const listint_t *temp;
 
 	count = 0;
-	temp = h
+	temp = h;
 	while (temp)
 	{
 		count++;
