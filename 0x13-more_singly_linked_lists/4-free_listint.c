@@ -2,19 +2,19 @@
 #include "lists.h"
 
 /**
- * free_listint2 - free a list
+ * free_listint - free a list
  * @head: double pointer to list
  *
  * Return: Always void
  */
-void free_listint2(listint_t **head)
+void free_listint(listint_t *head)
 {
 	listint_t *current, *next;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return;
 
-	current = *head;
+	current = head;
 	while (current != NULL)
 	{
 		next = current->next;
