@@ -10,13 +10,14 @@
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t nums;
+	size_t n;
 	int diff;
 	listint_t *temp;
 
 	if (!h || !*h)
 		return (0);
 
+	n = 0;
 	while (*h)
 	{
 		diff = *h - (*h)->next;
@@ -25,17 +26,17 @@ size_t free_listint_safe(listint_t **h)
 			temp = (*h)->next;
 			free(*h);
 			*h = temp;
-			nums++;
+			n++;
 		}
 		else
 		{
 			free(*h);
 			*h = NULL;
-			len++;
+			n++;
 			break;
 		}
 	}
 
 	*h = NULL;
-	return (nums);
+	return (n);
 }
