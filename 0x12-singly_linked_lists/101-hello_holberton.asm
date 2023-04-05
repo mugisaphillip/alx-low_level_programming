@@ -8,11 +8,11 @@ section .text
 
 main:
 	push rbp
-	mov rid, fmt
-	mov rsi, msg
-	mov rax, 0
+	mov rid,fmt
+	mov rsi,msg
+	mov rax,0
 	call prinft
 
 	pop rbp
-	mov rax, 0
+	mov rax,0
 	ref
