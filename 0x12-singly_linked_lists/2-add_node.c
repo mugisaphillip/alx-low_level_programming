@@ -10,11 +10,13 @@
  */
 unsigned int _strlen(char *str)
 {
-	unsigned int i;
+	unsigned int count;
 
-	for (i = 0; str[i]; i++)
-		;
-	return (i);
+	count = 0;
+	while (str[count])
+		count++;
+
+	return (count);
 }
 
 /**
@@ -26,21 +28,24 @@ unsigned int _strlen(char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new_node;
 
 	if (str == NULL)
 		return (NULL);
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 		return (NULL);
-	new->str = strdup(str);
-	if (new->str == NULL)
+
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		free(new);
+		free(new_node);
 		return (NULL);
 	}
-	new->len = _strlen(new->str);
-	new->next = *head;
-	*head = new;
-	return (new);
+
+	new_code->len = _strlen(new_code->str);
+	new_code->next = *head;
+	*head = new_code;
+	return (new_code);
 }
