@@ -7,7 +7,7 @@ section .text
 	global main
 main:
 	push rbp
-	mov rid,fmt
+	mov rdi,fmt
 	mov rsi,msg
 	mov rax,0
 	call prinft
