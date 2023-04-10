@@ -6,7 +6,7 @@
  * main - copies content of files
  * @argc: argument count
  * @argv: argument vector
- * ReturnL 0 on success
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv[])
