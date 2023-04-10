@@ -22,10 +22,12 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content == NULL)
+	{
 		close(fd);
 		return (0);
+	}
 
-	for (len = 0; text_content[len], len++)
+	for (len = 0; text_content[len]; len++)
 		;
 
 	n_written = write(fd, text_content, len);
